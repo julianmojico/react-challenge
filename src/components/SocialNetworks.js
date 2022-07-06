@@ -4,33 +4,33 @@ import { FaInstagram, FaTwitter, FaFacebook, FaYoutube, FaPinterest, FaTiktok, F
 
 const SocialNetworks = ({ list, ...props }) =>
     <IconContext.Provider value={{ color: "gray", className: "global-class-name" }}>
-        <div>
-            <ul {...props} className="d-inline list-unstyled">
-                <li className="mx-1 d-inline">
+        <div  {...props} >
+            <ul className="d-flex justify-content-around list-unstyled">
+                <li className="">
                     <FaInstagram />
                 </li>
-                <li className="mx-1 d-inline">
+                <li className="">
                     <FaTwitter />
                 </li>
-                <li className="mx-1 d-inline">
+                <li className="">
                     <FaFacebook />
                 </li>
-                <li className="mx-1 d-inline">
+                <li className="">
                     <FaYoutube />
                 </li>
-                <li className="mx-1 d-inline">
+                <li className="">
                     <FaPinterest />
                 </li>
-                <li className="mx-1 d-inline">
+                <li className="">
                     <FaTiktok />
                 </li>
-                <li className="mx-1 d-inline">
+                <li className="">
                     <FaTwitch />
                 </li>
-                <li className="mx-1 d-inline">
+                <li className="">
                     <FaReddit />
                 </li>
-                <li className="mx-1 d-inline">
+                <li className="">
                     <FaGithub />
                 </li>
             </ul>

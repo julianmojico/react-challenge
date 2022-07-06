@@ -1,15 +1,14 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-
+import './NavBar.css'
 const expand = 'lg'
 //TODO: borrar ids ?
 
 const NavBar = () =>
-    <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+    <Navbar key={expand} expand={expand} className="navbar mb-3">
         <Container fluid>
             <Navbar.Brand href="#">
                 {/*  TODO: AGREGAR ICON */}
@@ -30,14 +29,6 @@ const NavBar = () =>
                         <Nav.Link href="#action1">Dashboard</Nav.Link>
                         <Nav.Link href="#action2">Influencer List</Nav.Link>
                     </Nav>
-                    <Form className="d-flex">
-                        <Form.Control
-                            type="search"
-                            placeholder="Search"
-                            className="me-2"
-                            aria-label="Search"
-                        />
-                    </Form>
                 </Offcanvas.Body>
             </Navbar.Offcanvas>
         </Container>
