@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar/NavBar';
 import MainContent from './components/MainContent/MainContent';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
