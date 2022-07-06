@@ -1,5 +1,5 @@
 import React from "react";
-import InfluencerCard from "./InfluencerCard";
+import InfluencerCard from "./InfluencerCard/InfluencerCard";
 import Container from 'react-bootstrap/Container';
 
 const MainContent = ({ props }) => {
