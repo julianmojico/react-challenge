@@ -13,7 +13,7 @@ const InfluencerCard = () => {
                         <Card.Body>
                             <div class='cardgrid'>
                                 <Image className='avatar' roundedCircle={true} src="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/834.jpg" />
-                                <h5 className='name'>Influencer Name</h5>
+                                <h2 className='name'>Influencer Name</h2>
                                 <div className="social"><SocialNetworks /></div>
                                 <Card.Text className='cardText'>
                                     <p>

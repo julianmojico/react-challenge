@@ -11,6 +11,7 @@
 }
 
 .name {
+    font-size: 50px;
     grid-column: 2/ span 3;
     grid-row: 1
 }
