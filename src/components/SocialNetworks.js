@@ -2,37 +2,39 @@ import React from "react";
 import { IconContext } from "react-icons";
 import { FaInstagram, FaTwitter, FaFacebook, FaYoutube, FaPinterest, FaTiktok, FaTwitch, FaReddit, FaGithub } from 'react-icons/fa';
 
-const SocialNetworks = ({ list }) =>
+const SocialNetworks = ({ list, ...props }) =>
     <IconContext.Provider value={{ color: "gray", className: "global-class-name" }}>
-        <ul className="d-flex list-unstyled">
-            <li className="mx-1">
-                <FaInstagram />
-            </li>
-            <li className="mx-1">
-                <FaTwitter />
-            </li>
-            <li className="mx-1">
-                <FaFacebook />
-            </li>
-            <li className="mx-1">
-                <FaYoutube />
-            </li>
-            <li className="mx-1">
-                <FaPinterest />
-            </li>
-            <li className="mx-1">
-                <FaTiktok />
-            </li>
-            <li className="mx-1">
-                <FaTwitch />
-            </li>
-            <li className="mx-1">
-                <FaReddit />
-            </li>
-            <li className="mx-1">
-                <FaGithub />
-            </li>
-        </ul>
+        <div>
+            <ul {...props} className="d-inline list-unstyled">
+                <li className="mx-1 d-inline">
+                    <FaInstagram />
+                </li>
+                <li className="mx-1 d-inline">
+                    <FaTwitter />
+                </li>
+                <li className="mx-1 d-inline">
+                    <FaFacebook />
+                </li>
+                <li className="mx-1 d-inline">
+                    <FaYoutube />
+                </li>
+                <li className="mx-1 d-inline">
+                    <FaPinterest />
+                </li>
+                <li className="mx-1 d-inline">
+                    <FaTiktok />
+                </li>
+                <li className="mx-1 d-inline">
+                    <FaTwitch />
+                </li>
+                <li className="mx-1 d-inline">
+                    <FaReddit />
+                </li>
+                <li className="mx-1 d-inline">
+                    <FaGithub />
+                </li>
+            </ul>
+        </div>
     </IconContext.Provider>
 
 

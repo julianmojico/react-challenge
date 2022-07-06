@@ -10,33 +10,28 @@ const InfluencerCard = () => {
                 <Col>
                     <Card>
                         <Card.Body>
-                            <Row sm={0} >
-                                <Col xs={3} md={3}>
-                                    <Image className='float-sm-left w-75' roundedCircle={true} src="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/834.jpg" />
-                                </Col>
-                                <Col xs={9} md={9}>
-                                    <Card.Title>Influencer name</Card.Title>
-                                    <SocialNetworks />
-                                    <Card.Text>
-                                        <p>
-                                            This is a longer card with supporting text below as a natural
-                                            lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                            <div>
-                                                <ul className="d-flex list-unstyled">
-                                                    <li>
-                                                    <b>Reach</b>: 43.234
-                                                    </li>
-                                                    <li className='mx-3'>
-                                                    <b>Resonance</b>: 63.234
-                                                    </li>
-                                                </ul>
-                                               
-                                            </div>
-                                    </Card.Text>
-                                </Col>
-                            </Row>
+                                <div>
+                                    <Image className='float-left w-25' roundedCircle={true} src="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/834.jpg" />
+                                    <h5 className='d-inline'>Influencer Name</h5>
+                                    <Col sm={12}><SocialNetworks/></Col>
+                                </div>
+                                <Card.Text>
+                                    <p>
+                                        This is a longer card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.
+                                    </p>
+                                    <div>
+                                        <ul className="d-flex list-unstyled">
+                                            <li>
+                                                <b>Reach</b>: 43.234
+                                            </li>
+                                            <li className='mx-3'>
+                                                <b>Resonance</b>: 63.234
+                                            </li>
+                                        </ul>
 
+                                    </div>
+                                </Card.Text>
                         </Card.Body>
                     </Card>
                 </Col>
