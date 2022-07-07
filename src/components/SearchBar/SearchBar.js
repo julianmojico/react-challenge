@@ -10,8 +10,8 @@ const SearchBar = ({ handleSearch }) => {
   const openClass = open ? "open" : "";
 
   return (
-    <Form className={`searchBar ${openClass}`} onClick={() => setOpen(!open)}>
-      <FiSearch className="searchIcon" />
+    <Form className={`searchBar ${openClass}`}>
+      <FiSearch className="searchIcon" onClick={() => setOpen(!open)} />
       <Form.Control
         onChange={(event) => handleSearch(event.target.value)}
         type="search"

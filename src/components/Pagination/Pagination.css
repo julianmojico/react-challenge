@@ -23,3 +23,9 @@ li.paginationControl.page-item a.page-link {
   padding: 0px 12px;
   font-weight: 200;
 }
+
+a.page-link:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+}
