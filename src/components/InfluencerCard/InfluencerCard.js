@@ -5,7 +5,9 @@ import { Card, Col, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import SocialNetworks from "../SocialNetworks";
 import PropTypes from "prop-types";
+import { BsFillPersonFill } from "react-icons/bs";
 
+const audienceFormatter = (number) => Math.round(number / 1000000) + "M";
 function InfluencerCard({ data }) {
   return (
     data && (
@@ -17,6 +19,10 @@ function InfluencerCard({ data }) {
                 <div className="cardgrid">
                   <div className="avatar">
                     <Image fluid roundedCircle={true} src={person.avatar} />
+                    <div className="audience">
+                      <BsFillPersonFill />
+                      <span>{audienceFormatter(person.audience)}</span>
+                    </div>
                   </div>
                   <span className="name mx-3 mx-md-0">{person.name}</span>
                   <SocialNetworks data={person.channels} className="social" />
@@ -25,7 +31,11 @@ function InfluencerCard({ data }) {
                       <p>{person.description}</p>
                     </div>
                     <div className="d-flex flex-column flex-md-row flex-md-nowrap justify-content-md-start mt-3">
-                      <p>
+                      <p className="audience-text">
+                        <b>Audience:</b>
+                        <>&#160;</> {audienceFormatter(person.audience)}{" "}
+                      </p>
+                      <p className="mx-md-4">
                         <b>Reach:</b>
                         <>&#160;</>
                         {person.reach}

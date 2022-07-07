@@ -1,3 +1,7 @@
+.avatar {
+  position: relative;
+}
+
 .card {
   background-color: #f9fafb;
   border-radius: 32px;
@@ -16,6 +20,10 @@
 }
 
 @media (max-width: 767px) {
+  .audience {
+    display: none;
+  }
+
   .card {
     margin: 10px 0px;
   }
@@ -45,6 +53,24 @@
 }
 
 @media (min-width: 768px) {
+  .audience-text {
+    display: none;
+  }
+
+  .audience {
+    font-size: 20px;
+    position: absolute;
+    left: 20%;
+    bottom: -50px;
+    color: #475569;
+  }
+
+  .audience span {
+    vertical-align: middle;
+    line-height: normal;
+    padding-left: 5px;
+  }
+
   .card {
     margin: 10px;
   }
