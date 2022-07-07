@@ -1,6 +1,7 @@
 import React from "react";
 import { IconContext } from "react-icons";
 import icons from "../utils/icons";
+import PropTypes from "prop-types";
 
 const SocialNetworks = ({ data, ...props }) => {
   const socialNetworks = data.map((item) => item.platform.toLowerCase());
@@ -12,7 +13,9 @@ const SocialNetworks = ({ data, ...props }) => {
       <div {...props}>
         <ul className="d-flex justify-content-between justify-content-md-start  list-unstyled">
           {socialNetworks.map((site) => (
-            <li className="mx-2">{icons[site]}</li>
+            <li key={site} className="mx-2">
+              {icons[site]}
+            </li>
           ))}
         </ul>
       </div>
@@ -20,4 +23,7 @@ const SocialNetworks = ({ data, ...props }) => {
   );
 };
 
+SocialNetworks.propTypes = {
+  data: PropTypes.object,
+};
 export default SocialNetworks;

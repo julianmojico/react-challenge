@@ -1,6 +1,7 @@
 import React from "react";
 import { Pagination } from "react-bootstrap";
 import "./Footer.css";
+import PropTypes from "prop-types";
 
 const Footer = ({ pageList, actualPage }) => {
   return (
@@ -9,7 +10,7 @@ const Footer = ({ pageList, actualPage }) => {
         <Pagination.First className="paginationControl" />
         <Pagination.Prev className="paginationControl" />
         {pageList.map((pageNumber) => (
-          <div className="rounded-5">
+          <div key={pageNumber} className="rounded-5">
             <Pagination.Item
               className="pageNumber mx-3"
               key={pageNumber}
@@ -26,4 +27,8 @@ const Footer = ({ pageList, actualPage }) => {
   );
 };
 
+Footer.propTypes = {
+  pageList: PropTypes.array,
+  actualPage: PropTypes.number,
+};
 export default Footer;

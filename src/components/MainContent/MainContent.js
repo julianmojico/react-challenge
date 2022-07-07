@@ -5,7 +5,7 @@ import "./MainContent.css";
 import SearchBar from "../SearchBar/SearchBar";
 import { useSearchData } from "../../hooks/useSearchData.js";
 
-const MainContent = ({ props }) => {
+const MainContent = () => {
   const [filteredData, handleSearch] = useSearchData();
 
   return (

@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Col, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import SocialNetworks from "../SocialNetworks";
+import PropTypes from "prop-types";
 
 function InfluencerCard({ data }) {
   return (
@@ -44,5 +45,9 @@ function InfluencerCard({ data }) {
     )
   );
 }
+
+InfluencerCard.propTypes = {
+  data: PropTypes.object,
+};
 
 export default InfluencerCard;

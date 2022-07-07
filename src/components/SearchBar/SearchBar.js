@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./SearchBar.css";
 import Form from "react-bootstrap/Form";
 import { FiSearch } from "react-icons/fi";
+import PropTypes from "prop-types";
 
 const SearchBar = ({ handleSearch }) => {
   const [open, setOpen] = useState(false);
@@ -19,6 +20,10 @@ const SearchBar = ({ handleSearch }) => {
       />
     </Form>
   );
+};
+
+SearchBar.propTypes = {
+  handleSearch: PropTypes.func,
 };
 
 export default SearchBar;
