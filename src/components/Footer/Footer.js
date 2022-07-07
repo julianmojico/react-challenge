@@ -9,7 +9,7 @@ const Footer = ({ pageList, actualPage }) => {
                 <Pagination.First className='paginationControl'/>
                 <Pagination.Prev className='paginationControl'/>
                 {pageList.map(pageNumber =>
-                    <div class="rounded-5"><Pagination.Item className='pageNumber mx-3' key={pageNumber} active={pageNumber === actualPage} >{pageNumber}</Pagination.Item></div>
+                    <div className="rounded-5"><Pagination.Item className='pageNumber mx-3' key={pageNumber} active={pageNumber === actualPage} >{pageNumber}</Pagination.Item></div>
                 )}
                 <Pagination.Next className='paginationControl'/>
                 <Pagination.Last className='paginationControl'/>
