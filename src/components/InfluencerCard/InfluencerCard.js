@@ -7,10 +7,10 @@ import SocialNetworks from "../SocialNetworks";
 
 const InfluencerCard = () => {
     return (
-        <Row xs={1} md={2} className="g-2">
+        <Row xs={1} md={2} className="p-0 g-2">
             {Array.from({ length: 4 }).map((_, idx) => (
                 <Col>
-                    <Card className='card border-0 m-2'>
+                    <Card className='card border-0 mr-2'>
                         <Card.Body>
                             <div class='cardgrid'>
                                 <div className="avatar">

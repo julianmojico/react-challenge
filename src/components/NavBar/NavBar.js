@@ -4,7 +4,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './NavBar.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BsPersonCircle } from 'react-icons/bs';
+
 const expand = 'lg'
+
 //TODO: borrar ids ?
 
 const NavBar = () =>
@@ -13,7 +17,7 @@ const NavBar = () =>
             <Navbar.Brand href="#">
                 {/*  TODO: AGREGAR ICON */}
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Toggle bsPrefix='burgerMenu' aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-${expand}`}
                 aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -25,9 +29,13 @@ const NavBar = () =>
                     </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    <Nav className="justify-content-end flex-grow-1 pe-3">
-                        <Nav.Link href="#action1">Dashboard</Nav.Link>
-                        <Nav.Link href="#action2">Influencer List</Nav.Link>
+                    <Nav className="justify-content-end flex-grow-1 py-1">
+                        <Nav.Link className='px-4 mx-sm-4 mx-md-3' href="#action1">Dashboard</Nav.Link>
+                        <Nav.Link className='influencerLink mx-sm-4 px-4' href="#action2">Influencer List</Nav.Link>
+                        <Nav.Link className='d-none d-lg-block personCircle p-0 mx-4' href="#action3">
+                            <BsPersonCircle color={'#475569'}/>
+                        </Nav.Link>
+                        <Nav.Link className='d-lg-none d-lg-none mx-sm-4 px-4' href="#action2">My Account</Nav.Link>
                     </Nav>
                 </Offcanvas.Body>
             </Navbar.Offcanvas>

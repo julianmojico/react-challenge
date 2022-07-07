@@ -4,7 +4,7 @@ import './Footer.css';
 
 const Footer = ({ pageList, actualPage }) => {
     return (
-        <div className="d-flex justify-content-center py-4">
+        <div className="d-none d-md-flex d-lg-flex d-xl-flex justify-content-center py-4">
             <Pagination>
                 <Pagination.First className='paginationControl'/>
                 <Pagination.Prev className='paginationControl'/>
