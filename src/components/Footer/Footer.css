@@ -1,26 +1,25 @@
-
-.page-item.active span.page-link{
-    background-color: rgba(30, 41, 59, .10);
-    border-color: rgba(30, 41, 59, .25);
-    color:black;
-    border-radius: 12px !important;
-    font-size: 0.8rem;
-    padding: 10px 22px;
+.page-item.active span.page-link {
+  background-color: rgba(30, 41, 59, 0.1);
+  border-color: rgba(30, 41, 59, 0.25);
+  color: black;
+  border-radius: 12px !important;
+  font-size: 0.8rem;
+  padding: 10px 22px;
 }
 
 .pageNumber.page-item a {
-    font-size: 0.8rem;
-    color: black;
-    background-color: rgba(30, 41, 59, .10);
-    border-radius: 12px !important;
-    padding: 10px 22px;
+  font-size: 0.8rem;
+  color: black;
+  background-color: rgba(30, 41, 59, 0.1);
+  border-radius: 12px !important;
+  padding: 10px 22px;
 }
 
 li.paginationControl.page-item a.page-link {
-    background-color: transparent;
-    color:black;
-    font-size: 1.8rem;
-    line-height: 1.2;
-    padding: 0px 12px;
-    font-weight: 200;
+  background-color: transparent;
+  color: black;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  padding: 0px 12px;
+  font-weight: 200;
 }
