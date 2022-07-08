@@ -9,17 +9,17 @@ import { BsFillPersonFill } from "react-icons/bs";
 
 const audienceFormatter = (number) => Math.round(number / 1000000) + "M";
 function InfluencerCard({ data }) {
-  const notEmpty = Array.isArray(data) && data.length;
+  const dataNotEmpty = Array.isArray(data) && data.length;
 
   return (
-    notEmpty && (
-      <Row xs={1} md={2} className="p-0 g-2">
+    dataNotEmpty && (
+      <Row xs={1} md={2} className="p-0 g-2" role="influencer-list">
         {data.length &&
           data?.map((person) => (
             <Col key={person.uid}>
               <Card className="card border-0 mr-2">
                 <Card.Body>
-                  <div className="cardgrid">
+                  <div className="cardgrid" role="influencer-card">
                     <div className="avatar">
                       <Image fluid roundedCircle={true} src={person.avatar} />
                       <div className="audience">
@@ -60,7 +60,7 @@ function InfluencerCard({ data }) {
 }
 
 InfluencerCard.propTypes = {
-  data: PropTypes.array,
+  data: PropTypes.array.isRequired,
 };
 
 export default InfluencerCard;

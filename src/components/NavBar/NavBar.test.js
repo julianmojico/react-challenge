@@ -33,7 +33,6 @@ describe("NavBar tests", () => {
 
   test("Navbar includes menu elements", async () => {
     render(<NavBar />);
-    screen.debug();
     const button = screen.getByRole(/button/);
     fireEvent.click(button);
     //screen.getByRole('link', { name: 'Dashboard' })
