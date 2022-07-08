@@ -6,15 +6,20 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import "./NavBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BsPersonCircle } from "react-icons/bs";
+import { ReactComponent as Logo } from "../../resources/img/logo-app.svg";
 
 const NavBar = () => (
   <Navbar expand={"lg"} className="navbar mb-3">
     <Container fluid>
-      <Navbar.Brand href="#"></Navbar.Brand>
+      <Navbar.Brand href="#">
+        <Logo className="logo"></Logo>
+      </Navbar.Brand>
       <Navbar.Toggle bsPrefix="burgerMenu" />
       <Navbar.Offcanvas placement="end">
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>
+            <Logo className="logo"></Logo>
+          </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="justify-content-end flex-grow-1 py-1">

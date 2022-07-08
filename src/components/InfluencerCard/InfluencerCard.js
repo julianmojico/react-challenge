@@ -16,7 +16,7 @@ function InfluencerCard({ data }) {
       <Row xs={1} md={2} className="p-0 g-2" role="influencer-list">
         {data.length &&
           data?.map((person) => (
-            <Col key={person.uid}>
+            <Col ref={parent} key={person.uid}>
               <Card className="card border-0 mr-2">
                 <Card.Body>
                   <div className="cardgrid" role="influencer-card">
