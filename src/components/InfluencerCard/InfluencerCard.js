@@ -3,7 +3,7 @@ import "./InfluencerCard.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Col, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
-import SocialNetworks from "../SocialNetworks";
+import SocialNetworks from "../SocialNetworks/SocialNetworks";
 import PropTypes from "prop-types";
 import { BsFillPersonFill } from "react-icons/bs";
 
