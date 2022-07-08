@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Pagination as PaginationBs } from "react-bootstrap";
 import "./Pagination.css";
@@ -16,12 +16,18 @@ const Pagination = ({ itemsPerPage, items, handlePagination }) => {
     items.length > itemsPerPage
       ? currentPageStartOffset + itemsPerPage
       : items.length;
-  const currentData = items.slice(currentPageStartOffset, currentPageEndOffset);
   const nextPage = () =>
     currentPage === lastPage ? lastPage : currentPage + 1;
   const prevPage = () =>
     currentPage === firstPage ? firstPage : currentPage - 1;
-  handlePagination(currentData);
+
+  useEffect(() => {
+    const currentData = items.slice(
+      currentPageStartOffset,
+      currentPageEndOffset
+    );
+    handlePagination(currentData);
+  }, [items, itemsPerPage, currentPage]);
 
   return (
     <div className="d-none d-md-flex d-lg-flex d-xl-flex justify-content-center py-4">

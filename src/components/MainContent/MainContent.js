@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import InfluencerCard from "../InfluencerCard/InfluencerCard";
 import Container from "react-bootstrap/Container";
 import "./MainContent.css";
@@ -13,6 +13,8 @@ const arraysEquals = (a, b) =>
 const MainContent = () => {
   const [filteredData, handleSearch] = useSearchData();
   const [paginatedData, setPaginatedData] = useState([]);
+
+  useEffect(() => {}, [paginatedData]);
 
   const handlePagination = (newData) => {
     if (!arraysEquals(newData, paginatedData)) {

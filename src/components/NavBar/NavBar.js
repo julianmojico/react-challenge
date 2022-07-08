@@ -25,10 +25,10 @@ const NavBar = () => (
               Influencer List
             </Nav.Link>
             <Nav.Link
-              className="d-none d-lg-block personCircle p-0 mx-4"
+              className="personCircle d-none d-lg-block p-0 mx-4"
               href="#action3"
             >
-              <BsPersonCircle color={"#475569"} />
+              <BsPersonCircle size={"1.3em"} color={"#475569"} />
             </Nav.Link>
             <Nav.Link
               className="d-lg-none d-lg-none mx-sm-4 px-4"

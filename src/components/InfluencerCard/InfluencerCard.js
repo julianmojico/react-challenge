@@ -29,26 +29,26 @@ function InfluencerCard({ data }) {
                     </div>
                     <span className="name mx-3 mx-md-0">{person.name}</span>
                     <SocialNetworks data={person.channels} className="social" />
-                    <Card.Text className="cardText pr-3">
+                    <div className="cardText pr-3">
                       <div className="description">
-                        <p>{person.description}</p>
+                        <span>{person.description}</span>
                       </div>
                       <div className="d-flex flex-column flex-md-row flex-md-nowrap justify-content-md-start mt-3">
-                        <p className="audience-text">
+                        <div className="audience-text">
                           <b>Audience:</b>
                           <>&#160;</> {audienceFormatter(person.audience)}{" "}
-                        </p>
-                        <p className="mx-md-4">
+                        </div>
+                        <div className="mx-md-4">
                           <b>Reach:</b>
                           <>&#160;</>
                           {person.reach}
-                        </p>
-                        <p className="mx-md-4">
+                        </div>
+                        <div className="mx-md-4">
                           <b>Resonance:</b>
                           <>&#160;</> {person.resonance}{" "}
-                        </p>
+                        </div>
                       </div>
-                    </Card.Text>
+                    </div>
                   </div>
                 </Card.Body>
               </Card>
