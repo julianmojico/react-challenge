@@ -6,3 +6,5 @@ node_modules
 **/.svn
 **/.hg
 **/node_modules
+.DS_Store
+*.zip
