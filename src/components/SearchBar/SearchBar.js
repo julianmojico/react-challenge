@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 
 const SearchBar = ({ handleSearch }) => {
   const [open, setOpen] = useState(false);
-  const openClass = open ? "open" : "";
+  const openClass = open ? "open" : "closed";
 
   return (
     <Form className={`searchBar ${openClass}`}>
