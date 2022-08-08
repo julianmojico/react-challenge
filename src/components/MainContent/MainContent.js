@@ -8,7 +8,11 @@ import { useSearchData } from "../../hooks/useSearchData.js";
 import Pagination from "../Pagination/Pagination";
 
 const arraysEquals = (a, b) =>
+{
+ if (a.length === b.length){
   a.every((item) => b.includes(item)) && b.every((item) => a.includes(item));
+ }
+}
 
 const MainContent = () => {
   const [filteredData, handleSearch] = useSearchData();
@@ -25,7 +29,7 @@ const MainContent = () => {
   return (
     <Container className="mainContent px-4">
       <div className="d-flex flex-between justify-content-between align-items-center my-4">
-        <h1 className="title">Influencers</h1>
+        <h1 className="title">Influencers</h1> 
         <SearchBar handleSearch={handleSearch} />
       </div>
       <InfluencerCard data={paginatedData} />
