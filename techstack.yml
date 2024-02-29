@@ -2,7 +2,7 @@ repo_name: julianmojico/react-challenge
 report_id: 9e00d0801ec314e15a8eb1a7b13b5474
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-31T08:51:06+00:00'
+timestamp: '2024-02-29T19:43:59+00:00'
 requested_by: julianmojico
 provider: github
 branch: main
@@ -82,7 +82,7 @@ tools:
   detection_source_url: https://github.com/julianmojico/react-challenge
   detection_source: Repo Metadata
 - name: Prettier
-  description: 'Prettier is an opinionated code formatter. '
+  description: Prettier is an opinionated code formatter.
   website_url: https://prettier.io/
   version: 2.7.1
   license: MIT
